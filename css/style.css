@@ -1,0 +1,372 @@
+/* ==============================Base================================= */
+
+:root {
+    --color-justik: rgb(10, 152, 173);
+    --color-green: green;
+    --color-black: black;
+    --color-txt: white;
+    --color-red: red
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+
+/* ==============================Header================================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.container {
+}
+
+.header__content {
+}
+
+.header__top {
+    text-align: end;
+    text-shadow: 2px 2px 4px var(--color-txt);
+    background-color: #000;
+}
+
+.link-action {
+    color: var(--color-txt);
+}
+
+.header__bottom {
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.6) 0%,rgba(0, 0, 0, 0.6) 0.05%, rgba(18, 18, 21, 0.3) 100%), url(../iimg/header_bg.webp);
+    background-size: 200px;
+}
+
+.header__bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 12px 12px 12px #000;
+}
+
+.logo {
+    max-width: 300px;
+    display: inline-block;
+}
+
+.menu {
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.menu__item {
+}
+
+.link-page {
+}
+
+.link-page__wrapper-img {
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.link-page__wrapper-text {
+    color: var(--color-txt);
+    text-shadow: 12px 12px 12px #000;
+}
+
+/* ==============================Main================================= */
+
+.about-game {
+    padding-top: 180px;
+    padding-bottom: 150px;
+}
+
+.img-cont {
+    width: 80%;
+    margin: 0 auto;
+    height: 70vh;
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.6) 0%,rgba(0, 0, 0, 0.6) 0.05%, rgba(18, 18, 21, 0.3) 100%), url(../iimg/main_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.img-cont__description {
+    color: var(--color-txt);
+    text-shadow: #000 10px 10px 10px;
+    max-width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.welcome {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.main-info {
+    padding-top: 180px;
+}
+
+/* ===========================Slider================================ */
+
+.slider {
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+
+}
+
+.slider__slide {
+    width: 100%;
+    min-height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__slide--first {
+    background-image: url(../iimg/Sliders/Craft.webp);
+}
+
+.slider__slide--second {
+    background-image: url(../iimg/Sliders/build.webp);
+}
+
+.slider__slide--third {
+    background-image: url(../iimg/Sliders/golod.jpg);
+}
+
+.slider__slide--fourth {
+    background-image: url(../iimg/Sliders/war-village.png);
+}
+
+.slider__slide--fifth {
+    background-image: url(../iimg/Sliders/Survive.png);
+}
+
+.slider__txt {
+    color: var(--color-txt);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.slider__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slider__arrow path {
+    transition: fill 0.7s;
+}
+
+.slider__arrow:hover path {
+    fill: hwb(120 0% 50%);
+}
+
+.slider__arrow--left {
+    left: -65px;
+}
+
+.slider__arrow--right {
+    transform: translateY(-50%) rotate(180deg);
+    right: -65px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: flex;
+    column-gap: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slick-dots button {
+    font-size: 0;
+    line-height: 0;
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-green);
+    border-radius: 2px;
+}
+
+.slick-active button {
+    background-color: var(--color-justik);
+    cursor: default;
+}
+
+.slick-dots button:hover {
+    background-color: var(--color-txt);
+    cursor: pointer;
+}
+
+/* ================================mods======================================= */
+
+.mods {
+}
+.mods__content {
+}
+.mods-list {
+    padding-top: 130px;
+    width: 90%;
+    margin: 0 auto;
+}
+.mods-list__item {
+    padding: 60px 0px;
+}
+.mods__img {
+    width: 55%;
+    margin: 0 auto 40px;
+}
+.mods__description {
+    color: var(--color-txt);
+    text-align: center;
+    margin-bottom: 60px;
+}
+.wrapper-link {
+    text-align: right;
+}
+.mods__link {
+    background-color: var(--color-green);
+    color: var(--color-txt);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+
+
+/* ==============================Footer================================= */
+
+.border-line {
+    margin: 20px 0;
+	padding: 0;
+	height: 2px;
+	border: none;
+	background: linear-gradient(to right, transparent 50%, #000000 50%), 
+				linear-gradient(to right, rgb(10, 152, 173), red);
+	background-size: 16px 2px, 100% 2px;
+}
+
+.footer {
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-footer {
+    max-width: 200px;
+    display: inline-block;
+}
+
+.social-list {
+    display: flex;
+    column-gap: 25px;
+}
+
+.social-list__item {
+}
+
+.social-link {
+}
+
+/* ================================Adaptive============================== */
+@media (max-width: 768px) {
+
+    .logo {
+        max-width: 200px;
+    }
+
+    .link-page__wrapper-img {
+        width: 60px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .img-cont {
+        width: 100%;
+    }
+
+    .img-cont__description {
+        width: 90%;
+    }
+
+    .slider__arrow {
+        display: none !important;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .mods__img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .header__bottom .container,
+    .footer__content {
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    .mods-list {
+        padding-top: 150px;
+        width: 100%;
+    }
+
+    .mods__description {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+@media (hover:hover) {
+    .mods__link:hover {
+        background-color: var(--color-justik);
+        cursor: pointer;
+    }
+}
